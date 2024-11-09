@@ -11,6 +11,6 @@ num_people = int(input())
 
 total_bill = bill * (1 + tip_percent / 100)
 each_person_pay = round(total_bill / num_people, 2)
-each_person_pay = "{:.2f}".format(each_person_pay)
+each_person_pay = "{0:0.2f}".format(each_person_pay)
 
 print(f"Each person should pay: ${each_person_pay}")
